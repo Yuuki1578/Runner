@@ -2,7 +2,7 @@
 SOURCE := src/runner.c
 TARGET := build/run
 CC := gcc $(SOURCE)
-FLAGS := --optimize=3 -Wall -Werror -Wc23-extensions -std=gnu23 -o $(TARGET)
+FLAGS := --optimize=3 -Wall -Werror -Wc23-extensions -Wpedantic -std=gnu23 -o $(TARGET)
 
 # Sample
 SAMPLE_SOURCE := sample/sample.c
