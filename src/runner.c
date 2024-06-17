@@ -24,7 +24,7 @@ void file_context(char *dst, FILE *context) {
   buffer[strcspn(buffer, "\n")] = '\0';
 
   if (strlen(buffer) < 3) {
-    puts("Please provide executable path");
+    (void) puts("Please provide executable path");
     exit(EXIT_FAILURE);
   }
 
